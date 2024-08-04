@@ -1,0 +1,41 @@
+$primary: #F28000;
+
+.cont-login {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  .cont-err {
+    text-align: center;
+    color: rgb(255, 0, 0);
+  }
+  h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  }
+  .cont-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .cont-auth {
+      display: flex;
+      justify-content: center;
+      
+    }
+  }
+  .btn-1 {
+    background-color: $primary;
+    color: #fff;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    span {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+  }
+ 
+}

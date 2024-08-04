@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "./header.scss";
+@import "./login.scss";
+@import "./post.scss";
+@import "./info.scss";
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+ion-icon {
+  cursor: pointer;
+}
+.footer {
+  margin-top: 2rem;
+}
+.cont-f {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 1rem 2rem 1rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    li {
+      font-weight: 300;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
+.cont-end {
+  background-color: #141414;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+.cont-ad {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.cont-posts {
+  display: flex;
+  border-radius: 1rem;
+  background-color: #f5f6f7;
+  padding: 0.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.226);
+  .cont-sett button:hover {
+    background-color: rgba(128, 128, 128, 0.493);
+  }
+  .cont-sett button:hover ion-icon {
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  cursor: pointer;
+  .posts {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    .cont-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 10rem;
+
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 0.85rem;
+      }
+      h1 {
+        font-size: 1.1rem;
+        font-weight: 500;
+       
+      }
+
+      h1,
+      span {
+        font-weight: 400;
+      }
+    }
+    .cont-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      div {
+        text-align: end;
+      }
+      h1 {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.btn-send {
+cursor: not-allowed;
+}
+@media (max-width: 768px) {
+  .cont-f {
+    flex-direction: column;
+  }
+  .cont-posts {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
