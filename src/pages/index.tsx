@@ -35,27 +35,9 @@ export default function Home() {
       <Header />
       <Divider orientation="horizontal" />
       <div className="cont-ad px-5">
-        {data.length >= 1 ? (
-          data.map((res: any) => (
-            <Posts
-              key={res.id}
-              id={res.id}
-              img={res.img}
-              title={res.title}
-              price={res.price}
-              city={res.city}
-              created_at={res.created_at}
-              name={res.name}
-              userId={res.userId}
-            />
-          ))
-        ) : (
-          <div>
-            <Loading />
-            <Loading />
-            <Loading />
-          </div>
-        )}
+
+        teste aqui
+
       </div>
       <Footer />
     </main>
