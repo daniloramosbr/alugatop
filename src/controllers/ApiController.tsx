@@ -25,7 +25,7 @@ class ApiController {
 
   async getAll () {
     try {
-     return await axios.get("https://api-rent-sigma.vercel.app/rentall");     //pega posts
+     return await axios.get("https://api-rent-sigma.vercel.app/rentall")    //pega posts
       
     } catch (error) {
       console.log(error);
