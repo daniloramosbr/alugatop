@@ -29,6 +29,7 @@ export default function Home() {
     getRents();
   }, []);
 
+  console.log(data)
   return (
     <main className="cont-home">
       <Header />
