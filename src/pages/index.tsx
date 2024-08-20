@@ -34,11 +34,9 @@ export default function Home() {
     <main className="cont-home">
       <Header />
       <Divider orientation="horizontal" />
-      <div className="cont-ad px-5">
-
-        teste aqui
-
-      </div>
+      <h1>
+        testeeeeeeeeeeeeeeeee
+      </h1>
       <Footer />
     </main>
   );
