@@ -34,9 +34,31 @@ export default function Home() {
     <main className="cont-home">
       <Header />
       <Divider orientation="horizontal" />
-      <h1>
-        testeeeeeeeeeeeeeeeee
-      </h1>
+      <div className="px-5">
+
+        {data.length >= 1 ? (
+          data.map((res: any) => (
+            <Posts
+              key={res.id}
+              id={res.id}
+              img={res.img}
+              title={res.title}
+              price={res.price}
+              city={res.city}
+              created_at={res.created_at}
+              name={res.name}
+              userId={res.userId}
+            />
+          ))
+        ) : (
+          <div>
+            <Loading />
+            <Loading />
+            <Loading />
+          </div>
+        )}
+        
+      </div>
       <Footer />
     </main>
   );
